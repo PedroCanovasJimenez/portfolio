@@ -296,7 +296,7 @@ export default function PortfolioContent() {
           <Reveal delay={0.12} className="mt-12 grid border border-black/[0.18] sm:mt-20 lg:grid-cols-[1fr_auto]">
             <div className="p-5 sm:p-10 lg:p-12">
               <p className="text-[1.75rem] font-normal leading-tight tracking-[-0.025em] text-black/[0.88] sm:text-4xl sm:tracking-[-0.032em]">
-                Pedro Cánovas Jiménez
+                Pedro Cánovas
               </p>
               <p className="mt-4 max-w-4xl text-[0.98rem] leading-7 text-black/[0.66] sm:mt-5 sm:text-xl sm:leading-9">
                 Diseño web, FiveM, inteligencia artificial y dirección creativa.
@@ -331,7 +331,7 @@ export default function PortfolioContent() {
 
       <footer className="safe-footer border-t border-black/[0.18] px-4 py-9 sm:px-9 sm:py-14 lg:px-[5vw]">
         <div className="mx-auto flex max-w-[1640px] flex-col gap-3 text-[0.78rem] font-medium uppercase leading-5 tracking-[0.1em] text-black/[0.64] sm:flex-row sm:items-center sm:justify-between sm:gap-12 sm:text-[clamp(0.86rem,0.8vw,1rem)] sm:leading-6 sm:tracking-[0.14em]">
-          <p>© 2026 Pedro Cánovas Jiménez</p>
+          <p>© 2026 Pedro Cánovas</p>
           <p>Human vision · Machine precision</p>
         </div>
       </footer>
