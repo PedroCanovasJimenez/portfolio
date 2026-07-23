@@ -424,7 +424,7 @@ export default function HeadScrollExperience() {
               aria-label="Volver al inicio"
             >
               <span className="sm:hidden">Pedro Cánovas</span>
-              <span className="hidden sm:inline">Pedro Cánovas Jiménez</span>
+              <span className="hidden sm:inline">Pedro Cánovas</span>
             </a>
             <nav className="outline-small flex items-stretch border-l border-black/[0.16] text-[0.59rem] font-medium uppercase tracking-[0.1em] text-black/[0.68] sm:text-[clamp(0.88rem,0.82vw,1.02rem)] sm:tracking-[0.16em]">
               <a
@@ -468,8 +468,6 @@ export default function HeadScrollExperience() {
                   Pedro
                   <br />
                   Cánovas
-                  <br />
-                  Jiménez
                 </h1>
               </div>
 
