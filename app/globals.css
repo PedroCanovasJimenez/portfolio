@@ -19,19 +19,14 @@
 }
 
 html {
-  min-width: 320px;
   background: var(--canvas);
   scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
 }
 
 body {
-  min-width: 320px;
   min-height: 100%;
   margin: 0;
-  overflow-x: clip;
-  overscroll-behavior-y: none;
+  overflow-x: hidden;
   background:
     linear-gradient(180deg, rgba(255,255,255,0.1), transparent 24%),
     radial-gradient(circle at 50% 0%, rgba(255,255,255,0.24), transparent 34%),
@@ -83,19 +78,10 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-a {
-  touch-action: manipulation;
-}
-
 canvas,
 img,
 video {
   display: block;
-}
-
-video {
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 .glass-panel,
@@ -122,7 +108,7 @@ video {
     linear-gradient(180deg, rgba(255,255,255,0.09), transparent 44%);
 }
 
-/* Tipografía principal plana, limpia y legible. */
+/* Tipografía principal: plana, limpia y sin efecto cristal. */
 .outline-display {
   color: rgba(16, 17, 18, 0.9);
   font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
@@ -153,17 +139,12 @@ video {
 }
 
 .micro-label {
-  font-size: clamp(0.78rem, 0.78vw, 0.98rem);
+  font-size: clamp(0.84rem, 0.78vw, 0.98rem);
   line-height: 1.55;
   font-weight: 500;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(16,17,18,0.62);
-}
-
-.word-safe {
-  overflow-wrap: anywhere;
-  word-break: normal;
+  color: rgba(16,17,18,0.58);
 }
 
 .section-shell {
@@ -208,18 +189,6 @@ video {
     radial-gradient(circle at center, rgba(16,17,18,0.055), transparent 58%);
 }
 
-.hero-intro {
-  bottom: max(1.1rem, env(safe-area-inset-bottom));
-}
-
-.site-header {
-  padding-top: env(safe-area-inset-top);
-}
-
-.safe-footer {
-  padding-bottom: max(2.25rem, env(safe-area-inset-bottom));
-}
-
 .animated-grid {
   background-image:
     linear-gradient(rgba(16,17,18,0.055) 1px, transparent 1px),
@@ -246,69 +215,16 @@ video {
   background: rgba(17, 17, 17, 0.38);
 }
 
-@media (max-width: 639px) {
-  body::before {
-    background-size: 40px 40px, 40px 40px;
-    opacity: 0.78;
-  }
-
-  body::after {
-    opacity: 0.012;
-  }
-
+@media (max-width: 640px) {
   .outline-display {
-    line-height: 1.07 !important;
-    letter-spacing: -0.022em !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.08 !important;
     text-wrap: pretty;
-  }
-
-  .micro-label {
-    font-size: 0.72rem;
-    line-height: 1.45;
-    letter-spacing: 0.125em;
   }
 
   .section-shell::before,
   .section-shell::after {
     display: none;
-  }
-
-  .glass-panel,
-  .system-card {
-    backdrop-filter: blur(8px);
-    box-shadow:
-      0 1px 0 rgba(255,255,255,0.4) inset,
-      0 18px 44px rgba(16,17,18,0.045);
-  }
-}
-
-@media (max-width: 639px) and (max-height: 720px) {
-  .hero-note {
-    display: none;
-  }
-
-  .copy-block {
-    top: 56%;
-  }
-
-  .copy-body {
-    max-width: 29rem;
-    font-size: 0.86rem;
-    line-height: 1.3rem;
-  }
-}
-
-@media (max-width: 359px) {
-  .micro-label {
-    font-size: 0.66rem;
-    letter-spacing: 0.1em;
-  }
-}
-
-@media (hover: none) and (pointer: coarse) {
-  a,
-  button {
-    min-height: 44px;
   }
 }
 
